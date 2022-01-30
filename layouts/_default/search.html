@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="content" itemprop="articleBody">
+        <section id="search">
+            <form>
+                <input type="text" class="search-input" id="search-input" placeholder="Search...">
+            </form>
+            <div id="search-result">
+                <ul class="search-result-list" id="search-result-list"></ul>
+            </div>
+            <p class="search-no-result" id="search-no-result">No results found.</p>
+        </section>
+    </div>
+</article>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.5.3/fuse.min.js"></script>
+<script src="/js/search.js"></script>
+{{ end }}
