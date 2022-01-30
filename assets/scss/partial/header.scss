@@ -30,8 +30,8 @@
     background-size: $logo-width $logo-height;
     background-repeat: no-repeat;
     @if $logo-grayout {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
+      filter: none;
+      -webkit-filter: none;
     }
   }
   #nav {
@@ -78,8 +78,8 @@
 @if $logo-grayout {
   #header:hover {
     #logo {
-      filter: none;
-      -webkit-filter: none;
+      filter: drop-shadow(0 0 25px $color-text);
+      -webkit-filter: drop-shadow(0 0 25px $color-text);
     }
   }
 }
