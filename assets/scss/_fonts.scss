@@ -1,6 +1,26 @@
 @font-face {
+  font-family: 'Fira Code';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
-  font-family: "JetBrains Mono";
   font-display: swap;
-  src: local("JetBrains Mono"), local("JetBrains-Mono"), url("../lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("../lib/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff") format("woff"), url("../lib/JetBrainsMono/web/eot/JetBrainsMono-Regular.eot") format("embedded-opentype"), url("../lib/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf") format("truetype");
-};
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Medium.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
