@@ -17,6 +17,8 @@
       {{ partial "comments/utterances.html" . }}
     {{ else if eq .Site.Params.Comments.Engine "cactus_comments" }}
       {{ partial "comments/cactus_comments.html" . }}
+    {{ else if eq .Site.Params.Comments.Engine "twikoo" }}
+      {{ partial "comments/twikoo.html" . }}
     {{ end }}
   </div>
 {{ end }}
