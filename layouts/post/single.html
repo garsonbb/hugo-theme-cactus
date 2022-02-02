@@ -90,6 +90,8 @@
 <link rel="stylesheet" href={{ "/lib/font-awesome/css/all.min.css" | relURL }}>
 <script src={{ "/lib/jquery/jquery.min.js" | relURL }}></script>
 <script src={{ "/js/main.js" | relURL }}></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+<script src={{ "/js/zoom.js" | relURL }}></script>
 {{ if not (isset site.Params "disablecopy") }}
 <script src={{ "js/code-copy.js"  | relURL }}></script>
 {{ end }}
@@ -114,7 +116,5 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
-<script src={{ "/js/zoom.js" | relURL }}></script>
 {{ end }}
 </html>
