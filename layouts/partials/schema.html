@@ -21,6 +21,6 @@
 {{- end -}}
 
 <!-- Output all taxonomies as schema.org keywords -->
-<meta name="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }} {{ print "," }}{{ end }}{{ $tag }}{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
+<meta name="keywords" content="{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }}{{ print "," }}{{ end }}{{ $tag }}{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}" />
 {{- end -}}
 <meta name="viewport" content="width=device-width, initial-scale=1">
