@@ -14,11 +14,14 @@
       <div class="meta">
         {{ if (or (.Site.Author) (.Site.Title))}}
         <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">
-            {{ if .Site.Author }}
-              {{ .Site.Author }}
-            {{ else if .Site.Author }}
-              {{ .Site.Title }}
+          <span itemprop="name" style="display: none;">
+            {{ with .Site.Author.name }}
+              {{ . }}
+            {{ end }}
+          </span>
+          <span itemprop="url" style="display: none;">
+            {{ with .Site.Author.url }}
+              {{ . }}
             {{ end }}
           </span>
         </span>
