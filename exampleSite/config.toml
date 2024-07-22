@@ -4,8 +4,10 @@ title = "Cactus theme example"
 theme = "cactus"
 copyright = "You" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
-# googleAnalytics = "UA-1234-5"
 enableRobotsTXT = true
+
+[services.googleAnalytics]
+ID = "G-XXXXXXXXXX"
 
 # summaryLength = 2
 
@@ -65,7 +67,6 @@ weight = 5
 
   colortheme = "white" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
-  googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
   showAllPostsArchive = false # default
 
   # Home page settings
@@ -87,6 +88,10 @@ weight = 5
   # gravatar settings
   gravatar = "example@example.com"
   gravatar_cdn = "sdn.geekzu.org"
+
+  [params.author]
+    name = "your name"
+    url = "you url"
 
   [params.comments]
     enabled = true # default

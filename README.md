@@ -237,14 +237,10 @@ Cactus uses hugo's bulit in analytics templates. Check [hugo's documents](https:
 
 Set you tracking id in your site config.
 ```toml
-googleAnalytics = "UA-XXXXXXXX-XX" # or G-XXXXXXXX if you are using Google Analytics v4 (gtag.js)
+[services.googleAnalytics]
+ID = "G-XXXXXXXXXX"
 ```
 
-If you are using Google Analytics v3 (analytics.js), you can switch to asynchronous tracking by set `params.googleAnalyticsAsync` to `true`.
-```toml
-[params]
-googleAnalyticsAsync = true # not required
-```
 
 ### RSS
 
@@ -288,7 +284,7 @@ Pagination on posts archive can be disabled to show all posts in chronological o
 - [x] RSS
 - [ ] I18n
 - [x] Analytics
-- [ ] Local Search
+- [x] Local Search
 - [ ] toc template
 - [ ] Customizable copyright year
 - [ ] gallery

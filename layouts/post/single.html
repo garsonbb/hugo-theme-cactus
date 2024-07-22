@@ -12,15 +12,15 @@
         {{ .Title }}
       </h1>
       <div class="meta">
-        {{ if (or (.Site.Author) (.Site.Title))}}
+        {{ if (or (.Site.Params.author) (.Site.Title))}}
         <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name" style="display: none;">
-            {{ with .Site.Author.name }}
+            {{ with .Site.Params.author.name }}
               {{ . }}
             {{ end }}
           </span>
           <span itemprop="url" style="display: none;">
-            {{ with .Site.Author.url }}
+            {{ with .Site.Params.author.url }}
               {{ . }}
             {{ end }}
           </span>
